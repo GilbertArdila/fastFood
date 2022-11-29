@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Card = ({nombre,descripcion,precio,calificacion,reseñas,imagen, width,heigth,setToggle}) => {
 
@@ -23,12 +23,14 @@ const Card = ({nombre,descripcion,precio,calificacion,reseñas,imagen, width,hei
         <p
         title='nombreProducto'
         className='text-sm font-semibold tex-gray-700 mt-2'>{'$'+precio}</p>
+       
         <p
         title='calificacionProducto'
-        className='text-yellow-700 text-xs mt-2'>&#x2605;&#x2605;&#x2605;&#x2605;{calificacion}<span 
+        className='text-yellow-700 text-xs mt-2'>{calificacion}&#x2605;<span 
         title='reseñaProducto'
         className='text-gray-700'>/{reseñas}</span></p>
         </div>
+       
     </div>
   )
 }

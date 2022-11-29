@@ -9,8 +9,14 @@ import { fastFood } from "./utilities/backend";
 function App() {
   const [toggle, setToggle] = useState(false);
 
+  const handleOnClick = () => {
+    setToggle(!toggle);
+  };
+
   return (
-    <div className="App flex flex-col  min-h-screen w-auto  bg-gray-400 ">
+    <div className="App flex flex-col  min-h-screen w-auto  bg-gray-400 "
+    onClick={handleOnClick}
+    >
       <Header toggle={toggle} setToggle={setToggle}/>
       <Banner  setToggle={setToggle}/>
       
